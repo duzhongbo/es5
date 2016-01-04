@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>every</title>
+</head>
+<body>
+	
+
+<script type="text/javascript">
+var arr = [1,2,3,4,5];
+var cur = 0;
+
+function judge(num) {
+  return num > cur;
+}
+// ervery要求每一项都满足条件，some只要有一项即可
+if (arr.every(judge)) {
+  alert("过！");
+}else{
+  alert("停！");
+}
+
+
+
+</script>
+
+</body>
+</html>
