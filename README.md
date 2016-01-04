@@ -6,3 +6,5 @@ Firefox 3.6+
 Safari 5+  
 Chrome 8+  
 Internet Explorer 9+
+###资料出处  
+http://www.zhangxinxu.com/wordpress/?p=3220
