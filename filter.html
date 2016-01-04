@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>filter</title>
+</head>
+<body>
+	
+
+<script type="text/javascript">
+
+var aUser = [
+  {name: "xx", "email": "xx@email.com"},
+  {name: "yy",   "email": "yy@email.com"},
+  {name: "zz",  "email": "zz@email.com"}
+];
+
+var emailsZhang = aUser
+  // 获得邮件
+  .map(function (user) { return user.email; })
+  // 筛选出xx开头的邮件
+  .filter(function(email) {  return /^xx/.test(email); });
+
+console.log(emailsZhang.join(", ")); // xx@email.com
+
+
+
+
+</script>
+
+
+</body>
+</html>
