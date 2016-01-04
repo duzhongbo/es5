@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>forEach</title>
+</head>
+<body>
+	
+<script type="text/javascript">
+	
+// 对于古董浏览器，如IE6-IE8
+if (typeof Array.prototype.forEach != "function") {
+  Array.prototype.forEach = function () {
+    /* 实现 */
+  };
+}
+
+// [1, 2 ,3, 4].forEach(alert);
+// [1, 2 ,3, 4].forEach(console.log);// chrome不支持，Illegal invocation，火狐支持
+
+[1, 2 ,3, 4].forEach(function(value,index,arr){// value是遍历的数组内容；index是对应的数组索引，arr是数组本身
+	console.log(value,index,arr);
+})
+
+</script>
+
+
+</body>
+</html>
