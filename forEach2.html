@@ -21,11 +21,12 @@
 </ul>
 
 <script type="text/javascript">
+// 当直接给li集合使用forEach时，会报错：undefined is not a function，因为forEach方法是数组Array对象的，li的结合并不是一个严格的数组(虽然具有数组的一些特这，如length属相，下标确定元素);
 var aLi=j.getElementsByTagName('li');
-// aLi.forEach(function(value){
-// 	console.log(value);
-// })
-
+aLi.forEach(function(value){
+	console.log(value);
+})
+// 执行数组的forEach方法，不过执行者是dom集合不是数组，所以要call一下
 Array.prototype.forEach.call(aLi, function(div,a,c) {
     console.log(div,a,c);
 });
