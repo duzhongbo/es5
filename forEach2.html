@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>forEach元素dom应用</title>
+</head>
+<body>
+	
+
+<ul id="j">
+	<li data="A001"><a href="">文案1</a></li>
+	<li data="A002"><a href="">文案2</a></li>
+	<li data="A003"><a href="">文案3</a></li>
+	<li data="A004"><a href="">文案4</a></li>
+	<li data="A005"><a href="">文案5</a></li>
+	<li data="A006"><a href="">文案6</a></li>
+	<li data="A007"><a href="">文案7</a></li>
+	<li data="A008"><a href="">文案8</a></li>
+	<li data="A009"><a href="">文案9</a></li>
+	<li data="A0010"><a href="">文案10</a></li>
+</ul>
+
+<script type="text/javascript">
+var aLi=j.getElementsByTagName('li');
+aLi.forEach(function(value){
+	console.log(value);
+})
+
+// Array.prototype.forEach.call(aLi, function(div,a,c) {
+//     console.log(div,a,c);
+// });
+
+</script>
+
+</body>
+</html>
