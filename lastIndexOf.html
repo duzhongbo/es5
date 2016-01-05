@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lastIndexOf</title>
+</head>
+<body>
+	
+
+
+<script type="text/javascript">
+// 找到方向是从后向前，但是下标的计算还是从前往后
+var a=[1,2,3,4,5,2,6,8,9,6,7,8];
+
+var b=a.lastIndexOf(2);
+console.log(b);// 输出5，而不是1，因为是从后面开始的
+var c=a.lastIndexOf(2,6);// 第二个参数小于5时为1，大于等于5时为5,因为是从后面开始数的，然后向前寻找
+console.log(c);
+
+
+</script>
+
+
+</body>
+</html>
